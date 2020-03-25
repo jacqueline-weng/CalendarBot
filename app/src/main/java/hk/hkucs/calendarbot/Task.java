@@ -11,25 +11,29 @@ public class Task {
     public Date TIME;
     public String LOCATION;
     public String CONTENT;
+    public String date;
+    public String time;
 
     public Task(String date, String time ,String location, String content){
 
         this.LOCATION = location;
         this.CONTENT = content;
+        this.date = date;
+        this.time = time;
 
-        SimpleDateFormat dateFormat1 = new SimpleDateFormat("M.dd");
-        SimpleDateFormat dateFormat2 = new SimpleDateFormat("hh:mm a");
-        try{
-            this.DATE = dateFormat1.parse(date);
-        }catch(ParseException e){
-
-        }
-
-        try{
-            this.TIME = dateFormat2.parse(time);
-        }catch(ParseException e){
-
-        }
+//        SimpleDateFormat dateFormat1 = new SimpleDateFormat("M.dd");
+//        SimpleDateFormat dateFormat2 = new SimpleDateFormat("hh:mm a");
+//        try{
+//            this.DATE = dateFormat1.parse(date);
+//        }catch(ParseException e){
+//
+//        }
+//
+//        try{
+//            this.TIME = dateFormat2.parse(time);
+//        }catch(ParseException e){
+//
+//        }
 
 
 
